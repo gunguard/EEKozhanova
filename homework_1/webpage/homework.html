@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Личная страница Лизы Кожановой</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="description" content="Личная страница и контакты">
+		<!-- Bootstrap Core CSS -->
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="">Страница курса</a> </li> 
+						<li> <a href="">Страница группы</a> </li> 
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+		<header style="background-color:black; padding-top: 70px;"> 
+			<div id="wrapper">
+		
+    <link href="carousel/css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="carousel/css/carousel.css" media="all" rel="stylesheet" type="text/css">
+	<script src="carousel/js/modernizr.js"></script>
+	<script type="text/javascript" src="carousel/js/jquery.min.js"></script>
+	<script type="text/javascript" src="carousel/js/jquery.jcarousel.min.js"></script>
+			
+                <div class="jcarousel-wrapper">
+                    <div class="jcarousel">
+                        <ul class="clearfix">
+							<li>
+							<div class="container" style="padding-left: 100px; padding-top: 180px;"> 
+								<div class="row">
+									<div class="col-md-4">
+													<br/><br/>
+										<h1>Лиза Кожанова</h1>
+										<hr>
+										<p><i>Человек, желающий выпендриться ротатором баннеров &#127770 &#127773</i></p> 
+										</div>
+										<div class="col-md-4">
+												<img src="format/1.jpg" title="Фото Астафьева Василиса" alt="" style="height:320px; width:480px; margin:20px 20px 40px 20px; " >
+									</div>
+								</div>
+							</div></li>
+                            <li><img src="format/2.jpg"/></li>
+                            <li><div style="width: 100%; padding-left: 170px; padding-top: 170px; padding-right: 170px;"><h1>О себе</h1>
+									<h4>
+									Мне интересно множество вещей. Среди них есть скалолазание, изучение истории кинематографии и фотографии, чтение различной литературы. К сожалению, мне не удается уделять всему достаточно времени.
+									</br>
+									Мое главное увлечение, помимо языков, – это фотография. Ею я увлеклась, когда много общалась с журналистами и фотографами. Фотография позволяет при должном умении передать атмосферу момента, которую трудно иными средствами почувствовать другому человеку. Я хочу научиться передавать свое видение мира другим людям.
+								</h4></div></li>
+                            <li><img src="format/3.jpg"/></li>
+							<li><div style="width: 100%; background: url(format/logo_white1.png); height: 635px; padding-left: 170px; padding-top: 170px;"><h1>Место учебы</h1> <p> <a href="https://www.hse.ru/"><h4>НИУ ВШЭ</h4></a></p></div>
+							<li><img src="format/4.jpg"/></li>
+							<li><div style="width: 100%; background: url(format/korpus1.jpg); height: 635px; padding-left: 170px; padding-top: 174px;"><h1>Школа</h1> <p> <a href="https://goo.gl/maps/V2fJij7WZox"><h4>Гимназия №1551</h4></a></p></div></li>
+							<li><img src="format/5.jpg"/></li>
+							<li><div style="padding-left: 170px; padding-top: 170px;"><h1>Мои контакты в социальных сетях</h1></br></br></br>
+						<ul class="main-info">
+							<li><h4>Мой <a href="https://vk.com/gunguard">VK</h4></a></li></br></br>
+							<li><h4>Мой <a href="https://www.instagram.com/gunguard/">Instagram</h4></a></li></br></br>
+							<li><h4>Мой <a href="https://twitter.com/_gunguard">Twitter</h4></a></li>
+						</ul></div>
+									</li>
+					
+							<li><img src="format/6.jpg"/></li>
+							<li><img src="format/7.jpg"/></li>
+							<li><img src="format/8.jpg"/></li>
+							<li><img src="format/9.jpg"/></li>
+							<li><img src="format/10.jpg"/></li>
+							<li><img src="format/11.jpg"/></li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                    <p class="jcarousel-pagination"></p>
+                </div>
+			
+    <script>
+        $(function () {
+            var jcarousel = $('.jcarousel');
+
+            jcarousel
+                    .on('jcarousel:reload jcarousel:create', function () {
+                        jcarousel.jcarousel('items').width(jcarousel.innerWidth());
+                    })
+                    .jcarousel({
+                        wrap: 'circular',
+                        transitions: Modernizr.csstransitions ? {
+                            transforms:   Modernizr.csstransforms,
+                            transforms3d: Modernizr.csstransforms3d,
+                            easing:       'ease'
+                        } : false
+                    });
+
+            $('.jcarousel-control-prev')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .jcarouselControl({
+                        target: '-=1'
+                    });
+
+            $('.jcarousel-control-next')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .on('click', function(e) {
+                        e.preventDefault();
+                    })
+                    .jcarouselControl({
+                        target: '+=1'
+                    });
+
+            $('.jcarousel-pagination')
+                    .on('jcarouselpagination:active', 'a', function() {
+                        $(this).addClass('active');
+                    })
+                    .on('jcarouselpagination:inactive', 'a', function() {
+                        $(this).removeClass('active');
+                    })
+                    .on('click', function(e) {
+                        e.preventDefault();
+                    })
+                    .jcarouselPagination({
+                        item: function(page) {
+                            return '<a href="#' + page + '">' + page + '</a>';
+                        }
+                    });
+        });
+    </script>
+	
+        </div>
+		</header>
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; Л. Кожанова, 2016</p> 
+			</div>
+		</footer>
+	</body>
+</html>
+
