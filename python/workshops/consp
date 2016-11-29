@@ -1,0 +1,20 @@
+python.org - норм штука
+
+ОТКРЫТИЕ ФАЙЛА НЕ ЗНАЧИТ ЕГО ЧТЕНИЕ
+
+f=open('1.txt')
+print(f)
+
+>>> 
+<_io.TextIOWrapper name='1.txt' mode='r' encoding='cp1251'>
+
+f=open('1.txt', 'r', encoding='utf-8'/'cp1251')
+s=f.read()  -----> не очень удобно, если текстовый файл большой
+
+Задание: напечатать строки, которые начинаются с гласных
+
+f=open('2.txt', 'r')
+voc='АаЕеЁёИиОоУуЭэЮюЯя'
+for line in f:
+    if line.startswith(voc[i]):
+        print(line)
