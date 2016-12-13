@@ -1,0 +1,10 @@
+def PrepText():
+    f=open('text.txt','r',encoding='utf-8')
+    s=f.read().split()
+    words=[]
+    for n in s:
+        words.append(n.lower().strip('n\.,!?:;\'\"()[]=+-_#&@*{}|?/«»—'))
+    f.close
+    return words
+a=PrepText()
+print(len(a))
