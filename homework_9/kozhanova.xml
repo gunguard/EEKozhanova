@@ -1,11 +1,11 @@
 <html>
   <body>
-<se>
 <speach role="Дина Ивановна" sex="жен"> 
 <w>Ивановна<ana lex="ивановна" gr="S,patrn,f,anim=nom,sg"/></w>@ 
 <noindex>
 [нрзб]
-</noindex> 
+</noindex>
+<se>
 <w>Бабушка<ana lex="бабушка" gr="S,f,anim,nom,sg"/></w> 
 <w>пошла<ana lex="пойти" gr="V,pf,intr,praet,sg,indic,f,act"/></w> 
 <distinct form="тада"><w>тогда<ana lex="тогда" gr="ADV-PRO"/></w></distinct>
