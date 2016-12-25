@@ -509,12 +509,14 @@
 <w>такое<ana lex="такой" gr="APRO=acc,sg,n"/><ana lex="такой" gr="APRO=nom,sg,n"/></w> 
 <w>слово<ana lex="слово" gr="S,n,inan=acc,sg"/><ana lex="слово" gr="S,n,inan=nom,sg"/></w>?
 </se>
+</speach>
 <speach role="Лиза" sex="жен">
 <se>
 <w>Мне<ana lex="я" gr="SPRO,sg,1p=abl"/><ana lex="я" gr="SPRO,sg,1p=dat"/></w> 
 <w>кажется<ana lex="казаться" gr="V,ipf,intr=inpraes,sg,indic,3p"/></w>, 
 <w>да<ana lex="да" gr="PART="/></w>.
 </se>
+</speach>
 <speach role="Дина Ивановна" sex="жен">
 <se>
 <w>Я<ana lex="я" gr="SPRO,sg,1p=nom"/></w> 
