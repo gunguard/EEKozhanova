@@ -1,7 +1,6 @@
 <html>
-  <body>
+<body>
 <speach role="Дина Ивановна" sex="жен"> 
-<w>Ивановна<ana lex="ивановна" gr="S,patrn,f,anim=nom,sg"/></w>@ 
 <noindex>
 [нрзб]
 </noindex>
@@ -487,6 +486,7 @@
 </se>
 <se>
 <w>Вот<ana lex="вот" gr="PART="/></w>.
+</se>
 </speach>
 <speach role="Лиза" sex="жен">
 <se>
@@ -510,6 +510,7 @@
 <w>слово<ana lex="слово" gr="S,n,inan=acc,sg"/><ana lex="слово" gr="S,n,inan=nom,sg"/></w>?
 </se>
 <speach role="Лиза" sex="жен">
+<se>
 <w>Мне<ana lex="я" gr="SPRO,sg,1p=abl"/><ana lex="я" gr="SPRO,sg,1p=dat"/></w> 
 <w>кажется<ana lex="казаться" gr="V,ipf,intr=inpraes,sg,indic,3p"/></w>, 
 <w>да<ana lex="да" gr="PART="/></w>.
@@ -935,7 +936,7 @@
 <w>и<ana lex="и" gr="CONJ="/></w> 
 <w>она<ana lex="она" gr="SPRO,sg,3p,f=nom"/></w> 
 <w>понимала<ana lex="понимать" gr="V,ipf,tran=praet,sg,indic,f"/></w> 
-<distinct form="эо"><w>его<ana lex="он" gr="SPRO,sg,3p,m=acc"/><ana lex="он" gr="SPRO,sg,3p,m=gen"/><w></distinct>. 
+<distinct form="эо"><w>его<ana lex="он" gr="SPRO,sg,3p,m=acc"/><ana lex="он" gr="SPRO,sg,3p,m=gen"/></w></distinct>. 
 </se>
 <se>
 <w>Ну<ana lex="ну" gr="PART="/></w> 
