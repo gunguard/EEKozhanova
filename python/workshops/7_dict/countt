@@ -1,0 +1,32 @@
+def PrepText():
+    f=open('text.txt','r',encoding='utf-8')
+    s=f.read().split()
+    words=[]
+    for n in s:
+        words.append(n.lower().strip('n\.,!?:;\'\"()[]=+-_#&@*{}|?/«»—'))
+    f.close
+    return words
+
+
+def count(lis):
+    words = lis
+    word_count = {}
+    for word in words:
+        if word not in word_count:
+            word_count[word]=1
+        else:
+            word_count[word]+=1
+    return word_count
+
+
+def prin(dic):
+    for word in dic:
+        if dic[word]>=10:
+            print(word, dic[word])
+    return
+
+
+def main():
+    prin(count(PrepText()))
+
+main()
