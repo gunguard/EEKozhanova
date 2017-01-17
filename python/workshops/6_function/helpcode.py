@@ -3,7 +3,7 @@ def PrepText():
     s=f.read().split()
     words=[]
     for n in s:
-        words.append(n.lower().strip('n\.,!?:;\'\"()[]=+-_#&@*{}|?/«»—'))
+        words.append(n.lower().strip('n\.,!?:;\'\"“()[]=+-_#&@*{}|?/«»—'))
     f.close
     return words
 a=PrepText()
