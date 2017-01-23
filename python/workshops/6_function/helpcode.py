@@ -9,6 +9,8 @@ def PrepText():
 a=PrepText()
 print(a)
 
+
+
 random_adjective = 'маня'
 random_adjective = random_adjective.replace('ня', 'ый')
 print(random_adjective)
