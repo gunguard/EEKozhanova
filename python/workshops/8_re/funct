@@ -1,0 +1,27 @@
+import re
+
+
+def PrepText():
+    f=open('text.txt','r',encoding='utf-8')
+    s=f.read().split()
+    words=[]
+    for n in s:
+        words.append(n.lower().strip('n\.,!?:;\'\"()[]=+-_#&@*{}|?/«»—'))
+    f.close
+    return words
+
+
+def match(m):
+    reg = '.*[аеиоуыюяэ].*[аеиоуюяыэъ].*[аеиоуюяэыъ].*'
+    for i in m:
+        if re.search(reg,i):
+            print(i)
+    return
+
+
+def main():
+    match(PrepText())
+    return
+
+
+main()
