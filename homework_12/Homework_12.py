@@ -12,8 +12,8 @@
 # Пользователю даётся столько попыток угадать слово, сколько букв в подсказке;
 
 
-def PrepText():
-    f = open('text.csv', 'r', encoding='utf-8')
+def PrepText(m):
+    f = open(m, 'r', encoding='utf-8')
     s = f.read().split()
     words = []
     for n in s:
@@ -50,7 +50,7 @@ def guess(di):
 
 
 def main():
-    guess(dic(PrepText()))
+    guess(dic(PrepText('text.csv')))
     return
 
 
