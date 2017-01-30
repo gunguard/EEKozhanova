@@ -49,7 +49,7 @@ def forms(m):
     for i in range(len(m)):
         if re.search(reg, m[i]) and not re.search(fut, m[i-1]) and m[i].startswith('программир'):
             match.append(m[i])
-        if re.search(fut, m[i]) and re.search(inf, m[i+1]):
+        if re.search(fut, m[i]) and re.search(inf, m[i+1]) and m[i].startswith('программир'):
             match.append(m[i]+' '+m[i+1])
     return match
 
