@@ -10,6 +10,15 @@ a=PrepText()
 print(a)
 
 
+def PrepText():
+    f=open('text.txt','r',encoding='utf-8')
+    s=f.readlines()
+    words=[]
+    for n in s:
+        words.append(n)
+    f.close
+    return words
+
 
 random_adjective = 'маня'
 random_adjective = random_adjective.replace('ня', 'ый')
