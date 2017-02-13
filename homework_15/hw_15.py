@@ -15,5 +15,15 @@ def text():
     return s
 
 
-def change():
-    s1 = re.sub('()', '', s)
+def change(s):
+    s1 = re.sub('язык(а|у|ом|ами|е)?[^а-я]', 'шашлык\\1', s)
+    s2 = re.sub('Язык(а|у|ом|ами|е)?[^а-я]', 'Шашлык\\1', s1)
+    return s2
+
+
+def main():
+    txt = text()
+    print(change(txt))
+
+
+main()
