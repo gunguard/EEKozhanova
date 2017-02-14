@@ -1,4 +1,4 @@
-def PrepText():
+def text():
     f=open('text.txt','r',encoding='utf-8')
     s=f.read().split()
     words=[]
