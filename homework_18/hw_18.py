@@ -14,6 +14,7 @@ def extension():
         # По какой-то причине указание точки как текущей директории работает не очень, поэтому использую эту функцию.
         for n in files:
             lst.append(os.path.splitext(n)[1])
+    print(lst)
     return lst
 
 
